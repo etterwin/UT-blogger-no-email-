@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone X</title>
+    <link rel="shortcut icon" href="assets/pictures/img/smartphone.png" type="image/png" />
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- script -->
+    <script src="js/appendItem.js"></script>
+
+</head>
+<body>
+
+<header class="header header-en"></header>
+
+<div class="overlay"></div>
+
+<div class="wrapper">
+
+    <main class="main">
+
+        <a href="#">
+
+            <div class="container">
+
+                <img src="assets/pictures/img/ava.png" class="avatar" />
+                <div class="data-wrapper">
+                    <span class="data">19.12.2017   10:37</span>
+                    <p class="username">EverythingApplePro</p>
+                </div>
+
+            </div>
+
+        </a>
+
+        <h2 class="caption">EverythingApplePro vuole è augurarvi un Buon Natale ed un Felice Anno Nuovo e regalarvi
+            l’iPhone X.</h2>
+        <h3 class="caption--small"> Il celebre blogger EverythingApplePro dà il via ad un giveaway di 10 iPhone X.</h3>
+
+        <p class="text">Presto arriverà il Natale ed io vorrei fare qualcosa di carino per i miei lettori, e non solo
+            a loro. Il mio sponsor mi ha dato 10 iPhone X ed io ho pensato subito che era proprio ciò che mi serviva!
+            Ecco perché li metto in palio per tutti coloro che visitano questa pagina. Spero che prenderete parte al
+            sorteggio e che sarete fortunati :)</p>
+
+        <span class="line"></span>
+
+        <p class="text">Per prendere parte al giveaway degli iPhone X dovete:</p>
+        <ul class="list">
+            <li class="item">inserire la vostra e-mail in una finestra dedicata ( i risultati del giveaway saranno
+                trasmessi via e-mail)</li>
+            <li class="item">scrivere “Voglio l’iPhone X" ed il vostro nome nei commenti.</li>
+        </ul>
+
+        <input type="email" class="field" placeholder="E-mail"/>
+        <div class="btn-wrapper">
+            <a class="email-link" onclick="sendEmail(this)">Send</a>
+        </div>
+        <div class="email" id="email_alert"></div>
+        <div class="email" id="already_alert"></div>
+
+        <span class="line"></span>
+
+        <h3 class="text--bold">IMPORTANTE:</h3>
+        <p class="text">I risultati del giveaway saranno mostrati IMMEDIATAMENTE dopo che avrete inserito l’e-mail! Il
+            numero dei premi è limitato.
+            <br>Nel caso vinciate, per ritirare il vostro premio, dovrete avere tutti i requisiti del giveaway.
+        </p>
+
+        <span class="line"></span>
+
+        <p class="text--centre">In bocca al lupo!</p>
+        <p class="text-hint">P.S. Noi sappiamo che il nostro, e soprattutto il vostro, tempo è prezioso, quindi vi
+            invitiamo a non duplicare i commenti per accrescere le vostre probabilità di vincere. I duplicati saranno,
+            in ogni caso, cancellati😉</p>
+
+    </main>
+
+    <div class="content">
+
+        <textarea id="user_text" class="user-text" placeholder="Enter your comment..."></textarea>
+        <div class="cmt-wrapper">
+            <a class="cmt-link" id="add" onclick="addComment(this)">Commento</a>
+            <span class="add" id="add_alert">Il tuo commento è allegato</span>
+        </div>
+
+        <div class="comments__container">
+
+            <!-- Guest's comment -->
+            <div class="comment--none" id="comment_1">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time_1"></span>
+                        <span id="date_1" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text_1">Voglio l’iPhone X</p>
+                </div>
+
+            </div>
+
+            <!-- Main comment -->
+            <div class="comment--none" id="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time"></span>
+                        <span id="date" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text"></p>
+                </div>
+
+            </div>
+
+            <!-- Other comments -->
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>18:21:45</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">Voglio l’iPhone X</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>15:04:09</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">Voglio l’iPhone X</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>10:37:30</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">Voglio l’iPhone X</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">2017 | EverythingApplePro</p>
+    </footer>
+
+</div>
+
+<!-- script -->
+<script src="js/appendItem.js"></script>
+
+</body>
+</html>

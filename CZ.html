@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone X</title>
+    <link rel="shortcut icon" href="assets/pictures/img/smartphone.png" type="image/png" />
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- script -->
+    <script src="js/appendItem.js"></script>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script src="js/mailChimp.js"></script>
+
+</head>
+<body>
+
+<header class="header header-en"></header>
+
+<div class="overlay"></div>
+
+<div class="wrapper">
+
+    <main class="main">
+
+        <a href="#">
+
+            <div class="container">
+
+                <img src="assets/pictures/img/ava.png" class="avatar" />
+                <div class="data-wrapper">
+                    <span class="data">19.12.2017   10:37</span>
+                    <p class="username">EverythingApplePro</p>
+                </div>
+
+            </div>
+
+        </a>
+
+        <h2 class="caption">EverythingApplePro vám přeje Veselé Vánoce a Šťastný Nový rok a jako dárek vám chce dát
+            iPhone X</h2>
+        <h3 class="caption--small">Populární blogger EverythingApplePro pořádá soutěž o 10 iPhone X.</h3>
+
+        <p class="text">Brzy budou Vánoce a já bych rád udělal něco hezkého pro své odběratele a nejen pro ně. Dostal
+            jsem 10 iPhone X od svého sponzora a napadlo mě, že je to přesně ono! Rozhodl jsem se udělat soutěž pro
+            šťastlivce, kteří navštíví tuto stránku. Doufám, že se zúčastníte a budete mít radost z výhry :)</p>
+
+        <span class="line"></span>
+
+        <p class="text">Pro účast v soutěži o iPhone X musíte:</p>
+        <ul class="list">
+            <li class="item">Zadat svoji emailovou adresu (výsledky soutěže vám zašleme emailem)</li>
+            <li class="item">Do komentářů napsat své jméno a „chci iPhone X“.</li>
+        </ul>
+
+        <input type="email" class="field" placeholder="E-mail"/>
+        <div class="btn-wrapper">
+            <a class="email-link" onclick="sendEmail(this)">Send</a>
+        </div>
+        <div class="email" id="email_alert"></div>
+        <div class="email" id="already_alert"></div>
+
+        <span class="line"></span>
+
+        <h3 class="text--bold">DŮLEŽITÉ:</h3>
+        <p class="text">Výsledky soutěže Vám budou zaslány automaticky IHNED po zadání vašeho emailu! Počet cen je
+            omezen.
+            <br>Pokud vyhrajete, cenu získáte pouze v případě, že splníte všechna pravidla soutěže.</p>
+
+        <span class="line"></span>
+
+        <p class="text--centre">Hodně štěstí!</p>
+        <p class="text-hint">P.S. Vážíme si našeho a zejména Vašeho času, takže prosím neduplikujte komentáře pro
+            zvýšení šance na výhru. Všechny duplikáty budou smazány. 😉</p>
+
+    </main>
+
+    <div class="content">
+
+        <textarea id="user_text" class="user-text" placeholder="Enter your comment..."></textarea>
+        <div class="cmt-wrapper">
+            <a class="cmt-link" id="add" onclick="addComment(this)">Komentář</a>
+            <span class="add" id="add_alert">Váš komentář je připojen</span>
+        </div>
+
+        <div class="comments__container">
+
+            <!-- Guest's comment -->
+            <div class="comment--none" id="comment_1">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time_1"></span>
+                        <span id="date_1" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text_1">chci iPhone X</p>
+                </div>
+
+            </div>
+
+            <!-- Main comment -->
+            <div class="comment--none" id="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time"></span>
+                        <span id="date" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text"></p>
+                </div>
+
+            </div>
+
+            <!-- Other comments -->
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>18:21:45</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">chci iPhone X</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>15:04:09</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">chci iPhone X</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>10:37:30</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">chci iPhone X</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">2017 | EverythingApplePro</p>
+    </footer>
+
+</div>
+
+<!-- script -->
+<script src="js/appendItem.js"></script>
+<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script src="js/mailChimp.js"></script>
+
+</body>
+</html>

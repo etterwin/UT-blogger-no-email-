@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone X</title>
+    <link rel="shortcut icon" href="assets/pictures/img/smartphone.png" type="image/png" />
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- script -->
+    <script src="js/appendItem.js"></script>
+
+</head>
+<body>
+
+<header class="header header-en"></header>
+
+<div class="overlay"></div>
+
+<div class="wrapper">
+
+    <main class="main">
+
+        <a href="#">
+
+            <div class="container">
+
+                <img src="assets/pictures/img/ava.png" class="avatar" />
+                <div class="data-wrapper">
+                    <span class="data">19.12.2017   10:37</span>
+                    <p class="username">EverythingApplePro</p>
+                </div>
+
+            </div>
+
+        </a>
+
+        <h2 class="caption">Az EverythingApplePro Kellemes Karácsonyt és Boldog Újévet kíván, és ajándékba ad neked
+            egy iPhone X-et</h2>
+        <h3 class="caption--small">A népszerű blogger, EverythingApplePro nyereményjátékot szervez, és 10 iPhone X-et
+            ajánlott fel.</h3>
+
+        <p class="text">Nemsokára itt a karácsony és szeretnénk valami széppel kedveskedni az olvasóinknak, de nem
+            csak nekik. Kaptam 10 iPhone X-et a szponzoromtól és úgy gondoltam, pont erre van szükségem! Épp ezért
+            kisorsolom őket azok közt, akik erre az oldalra látogatnak. Remélem te is rész veszel benne és nagyon
+            boldog leszel :)</p>
+
+        <span class="line"></span>
+
+        <p class="text">Az iPhone X nyereményjátékban történő részvételhez, az alábbi szükséges:</p>
+        <ul class="list">
+            <li class="item">add meg az email címed egy különleges ablakban (a nyereményjáték eredményét emailben
+                küldjük el)</li>
+            <li class="item">írd be hozzászólásként azt, hogy: "iPhone X-et akarok" és a nevedet</li>
+        </ul>
+
+        <input type="email" class="field" placeholder="E-mail"/>
+        <div class="btn-wrapper">
+            <a class="email-link" onclick="sendEmail(this)">Send</a>
+        </div>
+        <div class="email" id="email_alert"></div>
+        <div class="email" id="already_alert"></div>
+
+        <span class="line"></span>
+
+        <h3 class="text--bold">FONTOS:</h3>
+        <p class="text">A nyereményjáték eredménye automatikusan RÖGTÖN azután jön, hogy elküldted az email címed!
+            A nyeremények száma korlátozott. Ahhoz, hogy te is nyerj, a nyeréskor meg kell felelned a nyereményjáték
+            összes követelményének.</p>
+
+        <span class="line"></span>
+
+        <p class="text--centre">Sok szerencsét!</p>
+        <p class="text-hint">U.I.: Értékes számunkra a saját és különösen a te időd, így kérjük, ne duplázd meg a
+            hozzászólásaidat azért, hogy megnöveld a nyerési esélyedet! Amúgy is minden ismétlődést törlünk 😉</p>
+
+    </main>
+
+    <div class="content">
+
+        <textarea id="user_text" class="user-text" placeholder="Enter your comment..."></textarea>
+        <div class="cmt-wrapper">
+            <a class="cmt-link" id="add" onclick="addComment(this)">Megjegyzés</a>
+            <span class="add" id="add_alert">A megjegyzés hozzáfűződik</span>
+        </div>
+
+        <div class="comments__container">
+
+            <!-- Guest's comment -->
+            <div class="comment--none" id="comment_1">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time_1"></span>
+                        <span id="date_1" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text_1">iPhone X-et akarok</p>
+                </div>
+
+            </div>
+
+            <!-- Main comment -->
+            <div class="comment--none" id="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time"></span>
+                        <span id="date" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text"></p>
+                </div>
+
+            </div>
+
+            <!-- Other comments -->
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>18:21:45</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">iPhone X-et akarok</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>15:04:09</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">iPhone X-et akarok</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>10:37:30</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">iPhone X-et akarok</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">2017 | EverythingApplePro</p>
+    </footer>
+
+</div>
+
+<!-- script -->
+<script src="js/appendItem.js"></script>
+
+</body>
+</html>

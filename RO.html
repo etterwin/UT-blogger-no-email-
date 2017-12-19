@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone X</title>
+    <link rel="shortcut icon" href="assets/pictures/img/smartphone.png" type="image/png" />
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- script -->
+    <script src="js/appendItem.js"></script>
+
+</head>
+<body>
+
+<header class="header header-en"></header>
+
+<div class="overlay"></div>
+
+<div class="wrapper">
+
+    <main class="main">
+
+        <a href="#">
+
+            <div class="container">
+
+                <img src="assets/pictures/img/ava.png" class="avatar" />
+                <div class="data-wrapper">
+                    <span class="data">19.12.2017   10:37</span>
+                    <p class="username">EverythingApplePro</p>
+                </div>
+
+            </div>
+
+        </a>
+
+        <h2 class="caption">EverythingApplePro îți dorește un Crăciun Fericit și un An Nou Fericit și îți oferă cadou
+            un iPhone X</h2>
+        <h3 class="caption--small">Cunoscutul blogger EverythingApplePro oferă 10 iPhone X cadou.</h3>
+
+        <p class="text">În curând vine Crăciunul și aș dori să fac ceva frumos pentru abonații mei și nu numai pentru
+            ei. Aveam 10 iPhone X de la sponsorul meu și m-am gândit că de asta am nevoie! De aceea le ofer unor
+            norocoși care au ajuns pe pagina mea. Sper să participi și să te bucuri :)</p>
+
+        <span class="line"></span>
+
+        <p class="text">Pentru a primi cadou un iPhone X trebuie:</p>
+        <ul class="list">
+            <li class="item">să introduci e-mailul în fereastra specială (rezultatele vor fi trimise pe e-mail)</li>
+            <li class="item">scrie „Vreau un iPhone X” și numele tău în căsuța de comentarii.</li>
+        </ul>
+
+        <input type="email" class="field" placeholder="E-mail"/>
+        <div class="btn-wrapper">
+            <a class="email-link" onclick="sendEmail(this)">Send</a>
+        </div>
+        <div class="email" id="email_alert"></div>
+        <div class="email" id="already_alert"></div>
+
+        <span class="line"></span>
+
+        <h3 class="text--bold">IMPORTANT:</h3>
+        <p class="text">Rezultatele vor ajunge automat IMEDIAT după ce ai introdus e-mailul! Numărul cadourilor este
+            limitat. <br>Pentru a primi un cadou, în cazul în care câștigi, trebuie să întrunești toate condițiile.</p>
+
+        <span class="line"></span>
+
+        <p class="text--centre">Baftă!</p>
+        <p class="text-hint">P.S. Ținem la timpul nostru, dar în special la al tău, deci, nu trimite mesaje duplicat
+            pentru a-ți mări șansele de câștig. Toate mesajele duplicat vor șterse oricum 😉</p>
+
+    </main>
+
+    <div class="content">
+
+        <textarea id="user_text" class="user-text" placeholder="Enter your comment..."></textarea>
+        <div class="cmt-wrapper">
+            <a class="cmt-link" id="add" onclick="addComment(this)">Cometariu</a>
+            <span class="add" id="add_alert">Comentariul dvs. este adăugat</span>
+        </div>
+
+        <div class="comments__container">
+
+            <!-- Guest's comment -->
+            <div class="comment--none" id="comment_1">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time_1"></span>
+                        <span id="date_1" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text_1">Vreau un iPhone X</p>
+                </div>
+
+            </div>
+
+            <!-- Main comment -->
+            <div class="comment--none" id="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span id="time"></span>
+                        <span id="date" class="date"></span>
+                    </p>
+                    <p class="guest-text" id="text"></p>
+                </div>
+
+            </div>
+
+            <!-- Other comments -->
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>18:21:45</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">Vreau un iPhone X</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>15:04:09</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">Vreau un iPhone X</p>
+                </div>
+
+            </div>
+
+            <div class="comment">
+
+                <img src="assets/pictures/svg/head.svg" class="guest-avatar" />
+                <div class="guest__data">
+                    <span class="guest-name">Guest,</span>
+                    <p class="guest-data">
+                        <span>10:37:30</span>
+                        <span class="date">12/2017</span>
+                    </p>
+                    <p class="guest-text">Vreau un iPhone X</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">2017 | EverythingApplePro</p>
+    </footer>
+
+</div>
+
+<!-- script -->
+<script src="js/appendItem.js"></script>
+
+</body>
+</html>
