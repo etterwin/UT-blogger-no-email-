@@ -54,7 +54,7 @@ function anotherCom() {
 
     document.getElementById('comment_1').classList.add('comment');
     document.getElementById('comment_1').classList.remove('comment--none');
-    
+
 }
 
 let counterEmail = 0;
